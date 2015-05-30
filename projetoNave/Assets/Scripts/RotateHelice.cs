@@ -3,7 +3,7 @@ using System.Collections;
 
 public class RotateHelice : MonoBehaviour {
 
-	public float velocidade_y;
+	public float Velocidade_y;
 
 	void Start () {
 	
@@ -11,7 +11,7 @@ public class RotateHelice : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Rotate(new Vector3(0, velocidade_y, 0) * Time.deltaTime);
+		transform.Rotate(new Vector3(0, Velocidade_y, 0) * Time.deltaTime);
 
 		}
 }

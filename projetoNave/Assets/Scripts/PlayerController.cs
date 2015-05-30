@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour {
 	{
 		rb = GetComponent<Rigidbody>();
 	}
-	
+
 	void FixedUpdate ()
 	{
 		float moveHorizontal = Input.GetAxis ("Horizontal");
@@ -21,4 +21,28 @@ public class PlayerController : MonoBehaviour {
 		
 		rb.AddForce (movement * speed);
 	}
+
+	void OnTriggerEnter(Collider other)
+	{
+		if (other.gameObject.CompareTag ("Coletaveis"))
+			Destroy(other.gameObject);
+		//	other.gameObject.SetActive (false);
+				Debug.Log("Ta Certo Fera .!");
+		
+	}
+
+
+
+ /*	function Update () {
+		var enemies = GameObject.FindGameObjectsWithTag (“enemy”);
+		var counter = GameObject.Find(“enemies counter”);
+		counter.guiText.text = “enemies found : ” + enemies.length;
+	}
+*/
 }
+		
+
+/*public class ExampleClass : MonoBehaviour {
+     	void OnTriggerEnter(Collider other) {
+	 		Destroy(other.gameObject);
+	} */
