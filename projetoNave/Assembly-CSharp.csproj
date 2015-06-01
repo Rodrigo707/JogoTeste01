@@ -48,7 +48,9 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\ColliderDestroy.cs" />
+     <Compile Include="Assets\Scripts\Contador.cs" />
      <Compile Include="Assets\Scripts\LoadLevel.cs" />
+     <Compile Include="Assets\Scripts\Moeda.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\RotateCube.cs" />
      <Compile Include="Assets\Scripts\RotateHelice.cs" />

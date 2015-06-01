@@ -25,8 +25,8 @@ public class PlayerController : MonoBehaviour {
 	void OnTriggerEnter(Collider other)
 	{
 		if (other.gameObject.CompareTag ("Coletaveis"))
-			Destroy(other.gameObject);
-		//	other.gameObject.SetActive (false);
+		//	Destroy(other.gameObject);
+			other.gameObject.SetActive (false);
 				Debug.Log("Ta Certo Fera .!");
 		
 	}
